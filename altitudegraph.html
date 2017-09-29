@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Demo Vue.js</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" id="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <main>
+
+
+
+        <div class="sidebar" id="sidebar">
+
+            <!-- Components for Profile and Contextual Menu -->
+            <div id="profile">
+                <profile></profile>
+            </div>
+            <div id="dashmenu">
+                <dash-menu></dash-menu>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="area"></div>
+        <nav class="main-menus">
+            <li class="has">
+                <a href="#">
+
+                    <span class="nav-text">
+                            
+                        </span>
+                </a>
+
+            </li>
+            <ul>
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fa fa-tachometer fa-2x"></i>
+                        <span class="nav-text">
+                            Dashboard
+                        </span>
+                    </a>
+
+                </li>
+                <li class="hass">
+                    <a href="droneprofile.html">
+                        <i class="fa fa-eye fa-2x"></i>
+                        <span class="nav-text">
+                            Drone Profile
+                        </span>
+                    </a>
+
+                </li>
+                <li class="has-subnav">
+                    <a href="altitudegraph.html">
+                        <i class="fa fa-bar-chart-o 2x"></i>
+                        <span class="nav-text">
+                            Daily Reports
+                        </span>
+                    </a>
+
+                </li>
+                <li class="has-subnav">
+                    <a href="inbox.html">
+                        <i class="fa fa-paper-plane fa-2x"></i>
+                        <span class="nav-text">
+                            Messages
+                        </span>
+                    </a>
+
+                </li>
+                <li class="has-subnav">
+                    <a href="https://www.dronedeploy.com/app2/checklist/59ce49ff54b966dba67101ab">
+                        <i class="fa fa-map-marker fa-2x"></i>
+                        <span class="nav-text">
+                            Map Location
+                        </span>
+                    </a>
+
+                </li>
+
+                <li class="has-subnav">
+                    <a href="index.html">
+                        <i class="fa fa-power-off fa-2x"></i>
+                        <span class="nav-textz">
+                            Logout
+                        </span>
+                    </a>
+
+                </li>
+
+
+
+
+
+                </a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+        <nav class="navbar" id="navbar">
+
+
+            <img src="img/logo.png">
+
+
+            <!-- components for menus -->
+            <div id="mainmenu">
+                <main-menu></main-menu>
+            </div>
+            <div id="minimenu">
+                <mini-menu></mini-menu>
+            </div>
+            <button id="swapBtn">CHANGE THEME</button>
+        </nav>
+
+        <section class="page" id="page">
+
+            <!-- components for specific pages -->
+
+
+
+            <div id="statistics">
+
+                <div id="graph" class="graph-container">
+                    <canvas class="graph-chart" id="myChart2"></canvas>
+                </div>
+                <div class="datepicker">
+                    <div class="input">
+                        <div class="result">Select Date: <span></span></div>
+                        <button><i class="fa fa-calendar"></i></button>
+                    </div>
+                    <div class="calendar"></div>
+                </div>
+
+
+
+
+
+
+                <h2> DAILY REPORT</h2>
+                <p>Altitude Graph</p>
+                <div id="drones">
+                    <img src="img/blue.png">
+                    <img src="img/red.png">
+                    <img src="img/green.png">
+                </div>
+            </div>
+            </div>
+
+
+
+
+
+
+
+        </section>
+    </main>
+
+
+
+
+    <!--    <script src='text/javascript' src='Chart.min.js'></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+
+    <script src="js/vue.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/dashmenu.js"></script>
+    <script src="js/mainmenu.js"></script>
+    <script src="js/minimenu.js"></script>
+    <script src="js/workflowTwo.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/drone-profile.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="js/workflowTwo.js"></script>
+    <script src="js/swap.js"></script>
+    <script src="js/datepicker.js"></script>
+
+
+
+
+</body>
+
+</html>
